@@ -2,12 +2,12 @@ version: 2
 
 sources:
   - name: staging
-    database: dtc-de-406001
+    database: project-1-408602
     schema: trips_data_all
 
     tables:
-      - name: green_tripdata_2020_12
-      - name: yellow_tripdata_2020_12
+      - name: green_tripdata
+      - name: yellow_tripdata
 
 models:
     - name: stg_green_tripdata
