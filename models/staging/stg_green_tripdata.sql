@@ -31,7 +31,7 @@ select
     {{ get_payment_type_description('payment_type')}} as payment_type_description,
     cast(congestion_surcharge as numeric) as congestion_surcharge
 
-from {{ source('staging', 'green_tripdata_2020_12') }}
+from {{ source('staging', 'green_tripdata') }}
 -- dbt build --m <model.sql> --var 'is_test_run: false'
 {% if var('is_test_run', default=true) %}
 
